@@ -47,6 +47,7 @@ of the demo programs for details.  Usually I use conditional compilation stateme
 cover the situation where I want to build sometimes against TCLib, and at other times against
 Microsoft's libraries.  So you'll see such idioms in my code as this....
 
+[CODE]
 // Strings.cpp
 #define   TCLib
 #define   UNICODE
@@ -67,6 +68,7 @@ Microsoft's libraries.  So you'll see such idioms in my code as this....
    #define   NEW new(std::nothrow)
 #endif
 #include  "Strings.h"
-
+[/CODE]
+   
 In terms of the sizes of programs (number of lines of code) one can build using TCLib I have never found 
 any limitations.  I've used it for large mission critical enterprise software used by large organizations.
